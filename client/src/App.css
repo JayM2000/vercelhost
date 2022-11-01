@@ -1,0 +1,358 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.App {
+  text-align: center;
+  width: 95%;
+  margin: 15px auto;
+}
+
+.container-drag {
+  text-align: center;
+}
+
+.wip {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  left: 0;
+  top: 10;
+  background-color: #EEEEEE;
+  border-right: 1px dotted;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #E0E0E0;
+  width:100%;
+}
+
+.task-header {
+  display: inline-block;
+  background-color: skyblue;
+  width:100%;
+}
+
+.droppable {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: #9E9E9E;
+  border-left: 1px dotted;
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px auto;
+  line-height: 5em;
+}
+
+.dash {
+  align-items: center;
+  border: 5px dashed grey;
+  display: flex;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.operands {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.block {
+  align-items: center;
+  background-color: #9acd32;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  cursor: move;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-weight: bolder;
+  height: 100px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+
+.remove {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 15px;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+}
+
+
+
+/* from here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.App {
+  text-align: center;
+}
+
+.operands, .operators{
+  display: flex;
+  overflow-x: scroll;
+  height:170px;
+}
+
+.operators {
+  height: 128px
+}
+
+.operand, .operator, .comparator, .rhs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin: 12px;
+  font-weight: bolder;
+  background-color: yellowgreen;
+  box-shadow: 12px 12px 5px rgba(23, 23, 23, 0.2);
+  cursor: move;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.operator, .comparator, .rhs{
+  height: 50px;
+  background-color: rosybrown;
+}
+
+.comparator, .rhs{
+  cursor: pointer;
+}
+
+.canvas{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: dashed 5px grey;
+  height: 180px;
+  align-items: center;
+}
+
+.submit{
+  color: white;
+  font-weight: bold;
+  border: none;
+  background-color:cornflowerblue;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor:pointer;
+}
+
+.remove{
+  display: flex;
+  color: rgb(240, 237, 247);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 15px;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove:hover{
+  color: rgb(233, 35, 0);
+}
+
+.canvas > .operand, .canvas > .operator, .canvas > .comparator{
+  position: relative;
+  cursor: pointer;
+}
+
+.canvas > .rhs{
+  position: relative;
+  cursor: pointer;
+  height: 100px;
+  background-color:darksalmon;
+}
+
+.space{
+  width: 50px;
+}
+.spacee {
+  height : 150px;
+}
+
+.btns {
+  display: flex;
+  font-weight: bolder;
+  box-shadow: 10px 10px 8px #535a49;
+  border-radius: 24px;
+}
+
+
+/* for tables  */
+
+/* mobile device */
+@media (max-width: 400px) {
+  
+  .table th {
+    padding: 0.55rem;
+  }
+
+  .tablesz {
+    padding: 20px;
+  }
+
+  th td {
+    text-align: center;
+  }
+}
+
+
+/* desktop device */
+@media (min-width: 800px) {
+
+  .table th {
+    padding: 0.95rem;
+  }
+
+.tablesz {
+  padding: 70px;
+}
+
+th td {
+  text-align: center;
+}
+
+}
+
+
+/* toggleswitch */
+.toggle {
+  align-items: center;
+  border-radius: 100px;
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.toggle:last-of-type {
+  margin: 0;
+}
+
+.toggle__input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.toggle__input:not([disabled]):active + .toggle-track, .toggle__input:not([disabled]):focus + .toggle-track {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #121943;
+}
+.toggle__input:disabled + .toggle-track {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.toggle-track {
+  background: #e5efe9;
+  border: 1px solid #5a72b5;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  margin-right: 12px;
+  position: relative;
+  width: 60px;
+}
+
+.toggle-indicator {
+  align-items: center;
+  background: #121943;
+  border-radius: 24px;
+  bottom: 2px;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  left: 2px;
+  outline: solid 2px transparent;
+  position: absolute;
+  transition: 0.25s;
+  width: 24px;
+}
+
+.checkMark {
+  fill: #fff;
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.toggle__input:checked + .toggle-track .toggle-indicator {
+  background: #121943;
+  transform: translateX(30px);
+}
+.toggle__input:checked + .toggle-track .toggle-indicator .checkMark {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-track {
+    border-radius: 0;
+  }
+}
