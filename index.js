@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-// const cors = require('cors');
+const cors = require('cors');
 const path = require('path');
 // const val = require('./mongoconnection/mongos.js');
 // val();
 
 app.use(express.json());
 
-// app.use(cors({credentials:true,origin:"http://localhost:3000"}));
+app.use(cors({credentials:true,origin:"http://localhost:3000"}));
 // app.use('/rout',require('./routes/logs'));
 
 // SERVER PUSHING TO HEROKU
